@@ -7,3 +7,5 @@ RUN rpm --import https://nginx.org/keys/nginx_signing.key \
   && yum clean all \
   && rm /etc/nginx/conf.d/default.conf
 
+CMD ["nginx", "-g", "daemon off;"]
+
